@@ -406,7 +406,8 @@ img {
 
 .container {
   width: min(100% - 40px, 1024px);
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header {
