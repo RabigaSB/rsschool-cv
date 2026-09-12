@@ -167,13 +167,15 @@ section {
 .skills__label,
 .experience__label,
 .education__label,
-.contact__label {
+.contact__label,
+.solution__label {
   position: relative;
 }
 .skills__label::after,
 .experience__label::after,
 .education__label::after,
-.contact__label::after {
+.contact__label::after,
+.solution__label::after {
   content: "";
   display: block;
   position: absolute;
@@ -204,6 +206,45 @@ section {
 .skill__card__title {
   color: white;
   border-bottom: 1px solid grey;
+}
+
+.solution {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.solution__label::after {
+  left: 13%;
+}
+.solution pre {
+  margin: 40px 30px;
+  border: 1px solid grey;
+  padding: 20px;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.solution__link {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid grey;
+  padding: 10px 10px 10px 37px;
+  position: relative;
+}
+.solution__link::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../assets/codewars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+}
+.solution__link:hover {
+  color: var(--purple-color);
 }
 
 .experience {
@@ -332,6 +373,9 @@ section {
 }
 .contact__element.github::before {
   background-image: url(../assets/Github.svg);
+}
+.contact__element.rsschoolapp::before {
+  background-image: url(../assets/rs_logo.svg);
 }
 
 .footer {
