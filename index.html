@@ -1,244 +1,293 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>CV. HTML, CSS & Git Basics</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-  <title>CV. HTML, CSS & Git Basics</title>
-</head>
+  <body>
+    <header>
+      <section class="container header" id="header">
+        <div class="logo">
+          <h3 class="hidden">Frontend Developer</h3>
+          <span>Rabiga</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about"><span class="purple">#</span>About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills"><span class="purple">#</span>Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#solution"><span class="purple">#</span>Codewars</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience"><span class="purple">#</span>Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education"><span class="purple">#</span>Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts"><span class="purple">#</span>Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-<body>
-  <header>
-    <section class="container header" id="header">
-      <div class="logo">
-        <span>Rabiga</span>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#about"><span class="purple">#</span>About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills"><span class="purple">#</span>Skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="#solution"><span class="purple">#</span>Codewars</a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience"><span class="purple">#</span>Experience</a>
-          </li>
-          <li class="nav__item">
-            <a href="#education"><span class="purple">#</span>Education</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts"><span class="purple">#</span>Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+    <main>
+      <section class="container about" id="about">
+        <div class="about__content">
+          <h1 class="about__content_name">
+            Hi, I'm <span class="purple">Rabiga Sarbassova</span>
+          </h1>
+          <h2 class="about__content_position">Front-end Developer</h2>
+          <div class="about__content_description">
+            I am a front-end developer. I create websites and web applications
+            using HTML, CSS, and JavaScript. Also, I have some knowledge of
+            backend development. I am passionate about web development and
+            always eager to learn new technologies.
+            <div>PS: My English level is intermediate.</div>
+          </div>
+        </div>
+        <div class="about__image">
+          <img src="assets/about_cat.png" alt="cat" />
+          <div class="about__image_text">
+            Currently working on <span class="purple">Portfolio</span>
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <section class="container about" id="about">
-      <div class="about__content">
-        <h1 class="about__content_name">
-          Hi, I'm <span class="purple">Rabiga Sarbassova</span>
-        </h1>
-        <h2 class="about__content_position">Front-end Developer</h2>
-        <p class="about__content_description">
-          I am a front-end developer. I create websites and web applications
-          using HTML, CSS, and JavaScript. Also, I have some knowledge of
-          backend development. I am passionate about web development and always
-          eager to learn new technologies.
-        <div>PS: My English level is intermediate.</div>
+      <section class="container quote">
+        <h3 class="hidden">A funny quote</h3>
+        <div class="quote__wrapper">
+          <span class="quote__text"
+            >With great power comes great electricity bill</span
+          >
+          <small class="quote__author">- Dr. Who</small>
+        </div>
+      </section>
+
+      <section id="skills" class="container skills">
+        <h2 class="skills__label"><span class="purple">#</span>skills</h2>
+
+        <div class="skills__content">
+          <img
+            src="assets/skills.png"
+            alt="geometrical pattern"
+            class="skills__image"
+          />
+          <div class="skills__grid">
+            <article>
+              <div class="skill__card">
+                <h3 class="skill__card__title">Frontend</h3>
+                <p>React, JavaScript, HTML, CSS</p>
+              </div>
+            </article>
+
+            <article>
+              <div class="skill__card">
+                <h3 class="skill__card__title">Backend</h3>
+                <p>C#, .NET, REST APIs</p>
+              </div>
+            </article>
+
+            <article>
+              <div class="skill__card">
+                <h3 class="skill__card__title">Database</h3>
+                <p>SQL, MongoDB</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="solution" class="container solution">
+        <h2 class="solution__label"><span class="purple">#</span>codewars</h2>
+        <h3>Task: Sum of Remainders</h3>
+
+        <p class="solution__description">
+          For each number from 1 to n, calculate i % m and return the sum.
         </p>
-      </div>
-      <div class="about__image">
-        <img src="assets/about_cat.png" alt="cat" />
-        <div class="about__image_text">
-          Currently working on <span class="purple">Portfolio</span>
+
+        <pre><code class="language-javascript">function f(n, m) {
+  let res = 0;
+  let cycleNumber = Math.floor(n / m);
+  if (cycleNumber == 0) {
+    res = (n * (n + 1)) / 2;
+    return res;
+  }
+
+  let temp = n;
+  const maxNumInCycle = m - 1;
+  while (temp > 0) {
+    if (temp >= m) {
+      res = res + (maxNumInCycle * (maxNumInCycle + 1)) / 2;
+    } else {
+      res = res + (temp * (temp + 1)) / 2;
+    }
+
+    temp = temp - m;
+  }
+
+  return res;
+}</code></pre>
+
+        <a
+          class="solution__link"
+          href="https://www.codewars.com/users/RabigaSB/completed_solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on Codewars
+        </a>
+      </section>
+
+      <section id="experience" class="container experience">
+        <h2 class="experience__label">
+          <span class="purple">#</span>experience
+        </h2>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <img
+              src="assets/isate.jpeg"
+              alt="isate logo"
+              class="timeline__item_logo"
+            />
+            <p class="timeline__item_date">June 2020 — February 2023</p>
+            <h3>Frontend Developer</h3>
+            <h4 class="timeline__item_title">ТОО iSate</h4>
+            <p class="timeline__item_text">
+              Developed and maintained web applications, collaborated with
+              cross-functional teams, and implemented responsive design.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <img
+              src="assets/technodom.jpeg"
+              alt="technodom logo"
+              class="timeline__item_logo"
+            />
+            <p class="timeline__item_date">December 2019 — June 2020</p>
+            <h3>Frontend Developer</h3>
+            <h4 class="timeline__item_title">Technodom</h4>
+            <p class="timeline__item_text">
+              Developed and optimized web applications.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <img
+              src="assets/crystal_spring.png"
+              alt="crystal spring logo"
+              class="timeline__item_logo"
+            />
+            <p class="timeline__item_date">May 2019 — December 2019</p>
+            <h3>Frontend Developer</h3>
+            <h4 class="timeline__item_title">Crystal Spring</h4>
+            <p class="timeline__item_text">
+              Supported web applications, modified existing code, fixed bugs,
+              and updated static content.
+            </p>
+          </article>
+
+          <article class="timeline__item">
+            <img
+              src="assets/algor.png"
+              alt="algor logo"
+              class="timeline__item_logo"
+            />
+            <p class="timeline__item_date">December 2018 — May 2019</p>
+            <h3>HTML Developer</h3>
+            <h4 class="timeline__item_title">Algor Education Centre</h4>
+            <p class="timeline__item_text">
+              Developed and maintained web applications, collaborated with
+              cross-functional teams, and implemented responsive design.
+            </p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="container quote">
-      <div class="quote__wrapper">
-        <span class="quote__text">With great power comes great electricity bill</span>
-        <small class="quote__author">- Dr. Who</small>
-      </div>
-    </section>
+      <section id="education" class="container">
+        <h2 class="education__label"><span class="purple">#</span>education</h2>
 
-    <section id="skills" class="container skills">
-      <h2 class="skills__label"><span class="purple">#</span>skills</h2>
-
-      <div class="skills__content">
-        <img src="assets/skills.png" alt="geometrical pattern" class="skills__image" />
-        <div class="skills__grid">
-          <article>
-            <div class="skill__card">
-              <h3 class="skill__card__title">Frontend</h3>
-              <p>React, JavaScript, HTML, CSS</p>
-            </div>
+        <div class="education__list">
+          <article class="education__card">
+            <h3>Satbayev University</h3>
+            <p>Master’s degree, Automation</p>
+            <span>2017 — 2019</span>
           </article>
 
-          <article>
-            <div class="skill__card">
-              <h3 class="skill__card__title">Backend</h3>
-              <p>C#, .NET, REST APIs</p>
-            </div>
-          </article>
-
-          <article>
-            <div class="skill__card">
-              <h3 class="skill__card__title">Database</h3>
-              <p>SQL, MongoDB</p>
-            </div>
+          <article class="education__card">
+            <h3>Energo University</h3>
+            <p>Bachelor’s degree, Automation Engineering</p>
+            <span>2012 — 2016</span>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="solution" class="container solution">
-      <h2 class="solution__label"><span class="purple">#</span>codewars</h2>
-      <h3>Task: Sum of Remainders</h3>
+      <section id="contacts" class="contact container">
+        <h2 class="contact__label"><span class="purple">#</span>contact</h2>
 
-      <p class="solution__description">
-        For each number from 1 to n, calculate i % m
-        and return the sum.
-      </p>
+        <div class="contact__content">
+          <a class="contact__element mail" href="mailto:iamrabiga@gmail.com">
+            iamrabiga@gmail.com
+          </a>
+          <a
+            class="contact__element discord"
+            href="https://discord.com/users/123456789"
+          >
+            Discord
+          </a>
+          <a
+            class="contact__element github"
+            href="https://github.com/RabigaSB"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub profile
+          </a>
+        </div>
+      </section>
+    </main>
 
-      <pre><code class="language-javascript">
-        function f(n, m) {
-          let res = 0;
-          let cycleNumber = Math.floor(n/m);
-          if (cycleNumber == 0) {
-            res = (n*(n+1))/2;
-            return res;
-          } 
-          
-          let temp = n;
-          const maxNumInCycle = m - 1;
-          while(temp > 0) {
-            if (temp >= m) {
-              res = res + (maxNumInCycle * (maxNumInCycle+1)) / 2;
-            } else {
-              res = res + (temp * (temp+1)) / 2;
-            }
-            
-            temp = temp - m;
-          }
-
-          return res;
-        }
-      </code></pre>
-
-      <a class="solution__link" href="https://www.codewars.com/users/RabigaSB/completed_solutions" target="_blank"
-        rel="noopener noreferrer">
-        View on Codewars
+    <footer class="footer">
+      <p>© 2026 Rabiga Sarbassova</p>
+      <a
+        class="contact__element github"
+        href="https://github.com/RabigaSB"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub profile
       </a>
-    </section>
-
-    <section id="experience" class="container experience">
-      <h2 class="experience__label"><span class="purple">#</span>experience</h2>
-
-      <div class="timeline">
-        <article class="timeline__item">
-          <img src="assets/isate.jpeg" alt="isate logo" class="timeline__item_logo" />
-          <p class="timeline__item_date">June 2020 — February 2023</p>
-          <h3>Frontend Developer</h3>
-          <h4 class="timeline__item_title">ТОО iSate</h4>
-          <p class="timeline__item_text">
-            Developed and maintained web applications, collaborated with
-            cross-functional teams, and implemented responsive design.
-          </p>
-        </article>
-
-        <article class="timeline__item">
-          <img src="assets/technodom.jpeg" alt="technodom logo" class="timeline__item_logo" />
-          <p class="timeline__item_date">December 2019 — June 2020</p>
-          <h3>Frontend Developer</h3>
-          <h4 class="timeline__item_title">Technodom</h4>
-          <p class="timeline__item_text">
-            Developed and optimized web applications.
-          </p>
-        </article>
-
-        <article class="timeline__item">
-          <img src="assets/crystal_spring.png" alt="crystal spring logo" class="timeline__item_logo" />
-          <p class="timeline__item_date">May 2019 — December 2019</p>
-          <h3>Frontend Developer</h3>
-          <h4 class="timeline__item_title">Crystal Spring</h4>
-          <p class="timeline__item_text">
-            Supported web applications, modified existing code, fixed bugs, and
-            updated static content.
-          </p>
-        </article>
-
-        <article class="timeline__item">
-          <img src="assets/algor.png" alt="algor logo" class="timeline__item_logo" />
-          <p class="timeline__item_date">December 2018 — May 2019</p>
-          <h3>HTML Developer</h3>
-          <h4 class="timeline__item_title">Algor Education Centre</h4>
-          <p class="timeline__item_text">
-            Developed and maintained web applications, collaborated with
-            cross-functional teams, and implemented responsive design.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="container">
-      <h2 class="education__label"><span class="purple">#</span>education</h2>
-
-      <div class="education__list">
-        <article class="education__card">
-          <h3>Satbayev University</h3>
-          <p>Master’s degree, Automation</p>
-          <span>2017 — 2019</span>
-        </article>
-
-        <article class="education__card">
-          <h3>Energo University</h3>
-          <p>Bachelor’s degree, Automation Engineering</p>
-          <span>2012 — 2016</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacts" class="contact container">
-      <h2 class="contact__label"><span class="purple">#</span>contact</h2>
-
-      <div class="contact__content">
-        <a class="contact__element mail" href="mailto:iamrabiga@gmail.com">
-          iamrabiga@gmail.com
-        </a>
-        <a class="contact__element discord" href="https://discord.com/users/123456789">
-          Discord
-        </a>
-        <a class="contact__element github" href="https://github.com/RabigaSB" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Rabiga Sarbassova</p>
-    <a class="contact__element github" href="https://github.com/RabigaSB" target="_blank" rel="noopener noreferrer">
-          GitHub profile
-        </a>
-    <a class="contact__element rsschoolapp" href="https://rs.school/courses/short-track" target="_blank" rel="noopener noreferrer">
-          RS School course
+      <a
+        class="contact__element rsschoolapp"
+        href="https://rs.school/courses/short-track"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RS School course
       </a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
-</body>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+  </body>
 </html>
