@@ -201,13 +201,13 @@ header {
 .timeline {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .experience__label::after {
   left: 16%;
 }
 .timeline__item {
   width: 30%;
-  margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid grey;
   text-align: center;
