@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #3a3a3a;
+  --purple-color: #9b59b6;
+  --main-padding: 12px;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 20px 0;
+  box-shadow: 5px 5px 15px #2e2d2d;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-right: 20px;
+  color: gray;
+}
+.nav__item :hover {
+  color: #fff;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.purple {
+  color: var(--purple-color);
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.about__content_name {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.about__content_position {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.about__content_description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about__image {
+  text-align: center;
+  position: relative;
+}
+
+.about__image_text {
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  position: absolute;
+  padding: 7px 60px 7px 30px;
+  background-color: var(--primary-color);
+  bottom: 10%;
+  right: 15%;
+}
+
+.about__image_text::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--purple-color);
+  position: absolute;
+  top: 10px;
+  left: 13px;
+}
+
+.quote {
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.quote__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+}
+.quote__text {
+  font-size: 24px;
+  font-style: italic;
+  border: 1px solid grey;
+  padding: 10px;
+  position: relative;
+  padding: 40px 20px;
+}
+.quote__text::before {
+  content: "“";
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  color: gray;
+  width: 50px;
+  height: 40px;
+  background-color: var(--primary-color);
+  font-size: 3em;
+  text-align: left;
+}
+.quote__text::after {
+  content: "”";
+  display: inline-block;
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  color: gray;
+  width: 50px;
+  height: 40px;
+  background-color: var(--primary-color);
+  font-size: 3em;
+  text-align: left;
+}
+.quote__author {
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  border: 1px solid grey;
+}
+.skills {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.skills__label {
+  position: relative;
+}
+.skills__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  border-top: 1px solid var(--purple-color);
+  top: 17px;
+  left: 10%;
+}
+.skills__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 55%;
+}
+
+.skill__card {
+  border: 1px solid grey;
+  text-align: center;
+  color: gray;
+}
+.skill__card__title {
+  color: white;
+  border-bottom: 1px solid grey;
+}

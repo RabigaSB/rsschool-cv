@@ -10,13 +10,99 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
     <title>CV. HTML, CSS & Git Basics</title>
   </head>
-  <body>
-    <header class="header"></header>
 
-    <section></section>
+  <body>
+    <header>
+      <section class="container header" id="header">
+        <div class="logo">
+          <span>Rabiga</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about"><span class="purple">#</span>About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills"><span class="purple">#</span>Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience"><span class="purple">#</span>Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education"><span class="purple">#</span>Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts"><span class="purple">#</span>Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <section class="container about" id="about">
+      <div class="about__content">
+        <h1 class="about__content_name">
+          Hi, I'm <span class="purple">Rabiga Sarbassova</span>
+        </h1>
+        <h2 class="about__content_position">Front-end Developer</h2>
+        <p class="about__content_description">
+          I am a front-end developer. I create websites and web applications
+          using HTML, CSS, and JavaScript. I am passionate about web development
+          and always eager to learn new technologies.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/about_cat.png" alt="cat" />
+        <div class="about__image_text">
+          Currently working on <span class="purple">Portfolio</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container quote">
+      <div class="quote__wrapper">
+        <span class="quote__text"
+          >With great power comes great electricity bill</span
+        >
+        <small class="quote__author">- Dr. Who</small>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2 class="skills__label"><span class="purple">#</span>skills</h2>
+
+      <div class="skills__content">
+        <img
+          src="assets/skills.png"
+          alt="geometrical pattern"
+          class="skills__image"
+        />
+        <div class="skills__grid">
+          <article>
+            <div class="skill__card">
+              <h3 class="skill__card__title">Frontend</h3>
+              <p>React, JavaScript, HTML, CSS</p>
+            </div>
+          </article>
+
+          <article>
+            <div class="skill__card">
+              <h3 class="skill__card__title">Backend</h3>
+              <p>C#, .NET, REST APIs</p>
+            </div>
+          </article>
+
+          <article>
+            <div class="skill__card">
+              <h3 class="skill__card__title">Database</h3>
+              <p>SQL, MongoDB</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer"></footer>
   </body>
