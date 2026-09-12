@@ -24,6 +24,10 @@ header {
   box-shadow: 5px 5px 15px #2e2d2d;
 }
 
+section {
+  margin: 50px 0;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -161,11 +165,15 @@ header {
   margin-bottom: 100px;
 }
 .skills__label,
-.experience__label {
+.experience__label,
+.education__label,
+.contact__label {
   position: relative;
 }
 .skills__label::after,
-.experience__label::after {
+.experience__label::after,
+.education__label::after,
+.contact__label::after {
   content: "";
   display: block;
   position: absolute;
@@ -198,19 +206,31 @@ header {
   border-bottom: 1px solid grey;
 }
 
+.experience {
+  background-image: url(../assets/skills.png);
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
 .timeline {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.experience__label {
+  padding-bottom: 20px;
 }
 .experience__label::after {
   left: 16%;
 }
 .timeline__item {
   width: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid grey;
   text-align: center;
+  background-color: var(--primary-color);
 }
 .timeline__item_logo {
   width: 100%;
@@ -235,4 +255,87 @@ header {
   color: gray;
   font-size: 14px;
   margin: 10px 0;
+}
+.education__label::after {
+  left: 15%;
+}
+.education__label {
+  padding-bottom: 20px;
+}
+.education__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.education__card {
+  max-width: 250px;
+  border: 1px solid grey;
+  text-align: center;
+  margin-right: 20px;
+}
+.education__card h3 {
+  border-bottom: 1px solid grey;
+  padding: 10px 0;
+}
+
+.education__card span {
+  border-top: 1px solid grey;
+  padding: 10px 0;
+  font-size: 14px;
+  color: gray;
+  display: block;
+}
+
+.contact__label::after {
+  left: 12%;
+}
+.contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.contact__element {
+  padding: 10px 20px 10px 46px;
+  border: 1px solid grey;
+  position: relative;
+  margin: 10px 0;
+}
+.contact__element:hover {
+  color: var(--purple-color);
+  border-color: var(--purple-color);
+  box-shadow: 1px 1px 1px var(--purple-color);
+}
+.contact__element::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 10px;
+}
+
+.contact__element.discord::before {
+  background-image: url(../assets/Discord.svg);
+}
+.contact__element.mail::before {
+  background-image: url(../assets/Email.svg);
+}
+.contact__element.github::before {
+  background-image: url(../assets/Github.svg);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid white;
 }
